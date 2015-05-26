@@ -16,6 +16,23 @@
         <link href="default.css" rel="stylesheet" type="text/css" media="all" />
         <link href="fonts.css" rel="stylesheet" type="text/css" media="all" />
         <link rel="shortcut icon" href="images/icon.ico"/>
+        
+        <!-- Método que valida los campos para que no los envíe vacíos -->
+        <script language="javascript">
+            function validaCampos(){
+                alert("Todos los campos son correctos");
+            }
+        </script>
+        
+        <!-- Método que valida que el campo de especie exista para poder buscarlo -->
+        <script language="javascript">
+            function validaEspecie(){
+                if(document.getElementById("txtEspecie").value === "")
+                    alert("Por favor, primero ingresa un nombre de especie a buscar");
+                else
+                    alert("Se buscara la especie primero. Buscando...");
+            }
+        </script>
 
 	<!--[if IE 6]><link href="default_ie6.css" rel="stylesheet" type="text/css" /><![endif]-->
     </head>
@@ -36,26 +53,138 @@
             </div>
         </div>
         <div id="wrapper">
+        <div style="text-align: left; margin-left: 2em">
+            <h1>Catálogo de Especie</h1>
+        </div>
 	<div id="featured-wrapper">
 		<div class="extra2 margin-btm container">
-			<div class="ebox1">
-				<div class="title">
-					<h2>Especies de México</h2>
-					<span class="byline">Integer sit amet pede vel arcu aliquet pretium</span>
-				</div>
-				<p>Consectetuer adipiscing elit. Nam pede erat, porta eu, lobortis eget, tempus et, tellus. Etiam neque. Vivamus consequat lorem at nisl. Nullam non wisi a sem semper eleifend. Donec mattis libero eget urna. Duis pretium velit ac mauris. Proin eu wisi suscipit nulla suscipit interdum. Aenean lectus lorem, imperdiet at, ultrices eget, ornare et, wisi. </p>
-				<a href="#" class="button">Etiam posuere</a>
-			</div>		
-
-			<div class="ebox2">
-				<div class="title">
-					<h2>Hábitas cálidos</h2>
-					<span class="byline">Integer sit amet pede vel arcu aliquet pretium</span>
-				</div>
-				<p>Donec pulvinar ullamcorper metus. In eu odio at lectus pulvinar mollis. Vestibulum sem magna, elementum ut, vestibulum eu, facilisis quis, arcu. Mauris a dolor. Nulla facilisi. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Sed blandit. Phasellus pellentesque, ante nec iaculis dapibus, eros justo auctor lectus.</p>
-				<a href="#" class="button">Etiam posuere</a>
-			</div>		
-		</div>	
+                    <div>
+                        <div class="extra2 margin-btm container">
+                            <div class="ebox1">
+                                <div>
+                                    <label class="etiqueta" style="margin-left: 3.2em;">Especie</label>
+                                    <input id="txtEspecie" class="entrada" type="text" name="txtEspecie">
+                                    <button type="button" name="btnBuscar" class="button" onclick="validaEspecie()" style="padding:0.2em 0.2em;letter-spacing: 0em;">Buscar</button>
+                                </div>
+                                <div>
+                                    <label class="etiqueta">Mínimo</label>
+                                    <input class="entrada" type="number" name="txtMinimo">
+                                </div>
+                                <div>
+                                    <label class="etiqueta">Máximo</label>
+                                    <input class="entrada" type="number" name="txtMaximo">
+                                </div>
+                                <div>
+                                    <label class="etiqueta">Relativa</label>
+                                    <input class="entrada" type="number" name="txtARelativa">
+                                </div>
+                            </div>  
+                            <div class="ebox2">
+                                <div>
+                                    <label class="etiqueta">Sensible</label>
+                                    <input class="entrada" type="number" name="txtSensible" style="margin-top: 2em">
+                                </div>
+                                <div>
+                                    <label class="etiqueta">Conserva</label>
+                                    <input class="entrada" type="number" name="txtConserva">
+                                </div>
+                                <div>
+                                    <label class="etiqueta">Investiga</label>
+                                    <input class="entrada" type="number" name="txtInvestiga">
+                                </div>
+                                <div>
+                                    <label class="etiqueta" style="margin-right: 2em">Notas</label>
+                                    <input class="entrada" type="text" name="txtNotas">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="extra2 margin-btm container">
+                            <button type="button" name="btnAgregar" class="button" onclick="validaCampos()" style="margin-right: 5em">Agregar</button>
+                            <button type="button" name="btnEliminar" class="button" onclick="validaEspecie()" style="margin-right: 5em">Eliminar</button>
+                            <button type="button" name="btnGuardar" class="button" onclick="validaCampos()">Guardar</button>
+                        </div>
+                    </div>
+                    <div>
+                        <table class="especies" style="overflow: auto;">
+                            <thead>
+                            <tr>
+                                <th>Especie</th>
+                                <th>Mínimo</th>
+                                <th>Máximo</th>
+                                <th>Relativa</th>
+                                <th>Sensible</th>
+                                <th>Conserva</th>
+                                <th>Investiga</th>
+                                <th>Notas</th>
+                            </tr>
+                            </thead>
+                            <tbody style="height: 300px; overflow: auto;"
+                            <tr>
+                                <td>Dato</td>
+                                <td>Dato</td>
+                                <td>Dato</td>
+                                <td>Dato</td>
+                                <td>Dato</td>
+                                <td>Dato</td>
+                                <td>Dato</td>
+                                <td>Dato</td>
+                            </tr>
+                            <tr class="alt">
+                                <td>Dato</td>
+                                <td>Dato</td>
+                                <td>Dato</td>
+                                <td>Dato</td>
+                                <td>Dato</td>
+                                <td>Dato</td>
+                                <td>Dato</td>
+                                <td>Dato</td>
+                            </tr>
+                            <tr>
+                                <td>Dato</td>
+                                <td>Dato</td>
+                                <td>Dato</td>
+                                <td>Dato</td>
+                                <td>Dato</td>
+                                <td>Dato</td>
+                                <td>Dato</td>
+                                <td>Dato</td>
+                            </tr>
+                            <tr class="alt">
+                                <td>Dato</td>
+                                <td>Dato</td>
+                                <td>Dato</td>
+                                <td>Dato</td>
+                                <td>Dato</td>
+                                <td>Dato</td>
+                                <td>Dato</td>
+                                <td>Dato</td>
+                            </tr>
+                            <tr>
+                                <td>Dato</td>
+                                <td>Dato</td>
+                                <td>Dato</td>
+                                <td>Dato</td>
+                                <td>Dato</td>
+                                <td>Dato</td>
+                                <td>Dato</td>
+                                <td>Dato</td>
+                            </tr>
+                            <tr class="alt">
+                                <td>Dato</td>
+                                <td>Dato</td>
+                                <td>Dato</td>
+                                <td>Dato</td>
+                                <td>Dato</td>
+                                <td>Dato</td>
+                                <td>Dato</td>
+                                <td>Dato</td>
+                            </tr>
+                            </tbody>
+                        </table>
+                    </div>
+		</div>	<!-- Aquí termina etiqueta Extra2 -->
 	</div>
 </div>
 <div id="copyright" class="container">

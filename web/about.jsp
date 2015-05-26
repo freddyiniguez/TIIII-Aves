@@ -36,25 +36,38 @@
             </div>
         </div>
         <div id="wrapper">
+            <div style="text-align: center">
+            <h1>Desarrolladores</h1>
+        </div>
 	<div id="featured-wrapper">
 		<div class="extra2 margin-btm container">
 			<div class="ebox1">
 				<div class="title">
-					<h2>Especies de México</h2>
-					<span class="byline">Integer sit amet pede vel arcu aliquet pretium</span>
+					<h2>Alfredo Campos Barrera</h2>
+					<span class="byline">@alfredocampos</span>
 				</div>
-				<p>Consectetuer adipiscing elit. Nam pede erat, porta eu, lobortis eget, tempus et, tellus. Etiam neque. Vivamus consequat lorem at nisl. Nullam non wisi a sem semper eleifend. Donec mattis libero eget urna. Duis pretium velit ac mauris. Proin eu wisi suscipit nulla suscipit interdum. Aenean lectus lorem, imperdiet at, ultrices eget, ornare et, wisi. </p>
-				<a href="#" class="button">Etiam posuere</a>
+				<p>Nulla facilisi.Phasellus pellentesque, ante nec iaculis dapibus, eros justo auctor lectus.</p>
+				<a href="http://www.twitter.com/freddyiniguez" class="button">Ir a sitio</a>
 			</div>		
 
 			<div class="ebox2">
 				<div class="title">
-					<h2>Hábitas cálidos</h2>
-					<span class="byline">Integer sit amet pede vel arcu aliquet pretium</span>
+					<h2>Julián Galván Viveros</h2>
+					<span class="byline">@juliangalvan</span>
 				</div>
-				<p>Donec pulvinar ullamcorper metus. In eu odio at lectus pulvinar mollis. Vestibulum sem magna, elementum ut, vestibulum eu, facilisis quis, arcu. Mauris a dolor. Nulla facilisi. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Sed blandit. Phasellus pellentesque, ante nec iaculis dapibus, eros justo auctor lectus.</p>
-				<a href="#" class="button">Etiam posuere</a>
+				<p>Nulla facilisi.Phasellus pellentesque, ante nec iaculis dapibus, eros justo auctor lectus.</p>
+				<a href="http://www.twitter.com/freddyiniguez" target="_blank" class="button">Ir a sitio</a>
 			</div>		
+		</div>	
+                <div class="extra2 margin-btm container">
+			<div class="ebox1">
+				<div class="title">
+					<h2>Freddy Íñiguez López</h2>
+					<span class="byline">@freddyiniguez</span>
+				</div>
+				<p>Software Developer | Into Overpopulation, Social Development and Open Knowledge | Apple&Porsche | Freedom&Innovation | (R)Evolution | Here's to the crazy ones</p>
+				<a href="http://www.twitter.com/freddyiniguez" target="_blank" class="button">Ir a sitio</a>
+			</div>			
 		</div>	
 	</div>
 </div>

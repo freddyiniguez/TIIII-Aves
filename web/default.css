@@ -955,3 +955,72 @@ ul.contact li a.icon-rss:before
 {
 	float: right;
 }
+
+.extra2 .ebox1 .etiqueta
+{
+    text-align: left;
+    margin-right: 1em;
+    font-size: 1.3em;
+}
+
+.extra2 .ebox1 .entrada
+{
+    text-align: center;
+    margin-left: 2em;
+    margin-right: 2em;
+    margin-bottom: 2em;
+}
+
+.extra2 .ebox2 .etiqueta
+{
+    text-align: left;
+    margin-right: 1em;
+    font-size: 1.3em;
+}
+
+.extra2 .ebox2 .entrada
+{
+    text-align: center;
+    margin-left: 2em;
+    margin-right: 2em;
+    margin-bottom: 2em;
+}
+
+.extra2 .especies
+{
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.extra2 .especies td, .extra2 .expecies th
+{
+    border: 2px solid #F87979;
+    padding: 3px 7px 2px 7px;
+}
+
+.extra2 .especies th 
+{
+    text-align: center;
+    padding-top: 5px;
+    padding-bottom: 4px;
+    background-color: #F87979;
+    color: #ffffff;
+}
+
+.extra2 .especies tr.alt td 
+{
+    color: #000000;
+    background-color: #EAF2D3;
+}
+
+/*********************************************************************************/
+/* Label Styles                                                            */
+/*********************************************************************************/
+.label
+{
+    text-align: left;
+    text-spacing: trim-start;
+    margin-right: 1em;
+    font-size: 16px;
+    
+}
