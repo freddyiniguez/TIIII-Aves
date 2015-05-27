@@ -107,6 +107,7 @@
                         </div>
                     </div>
                     <div>
+                    <!-- Tabla de especies -->
                         <table class="especies" style="overflow: auto;">
                             <thead>
                             <tr>
