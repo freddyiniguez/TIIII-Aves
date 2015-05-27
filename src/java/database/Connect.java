@@ -20,16 +20,18 @@ public class Connect {
     /**
      * @method: Constructor  
     */
+    @SuppressWarnings("LeakingThisInConstructor")
     public Connect(){
-        this.host = "COMFRED-WINDOWS\\COMFRED:61581";
-        this.db = "Aves_Per";
+        this.host = "COMFRED-WINDOWS\\DEVELOPMENT:50377";
+        this.db = "Aves_Prueba";
         this.username = "sa";
-        this.password = "SQl11386703.";
+        this.password = "123456";
         
         try{
             Class.forName("com.microsoft.sqlserver.jdbc.SQLServerDriver").newInstance();
             String url = "jdbc:sqlserver://"+host+";databaseName="+db;
             con = DriverManager.getConnection(url, username, password);
+            System.out.println("Se creo la conexion");
         } catch (InstantiationException | ClassNotFoundException | IllegalAccessException | SQLException ex) {
             Logger.getLogger(Connect.class.getName()).log(Level.SEVERE, null, ex);
         }
@@ -43,6 +45,7 @@ public class Connect {
      * @param username
      * @param password
     */
+    @SuppressWarnings("LeakingThisInConstructor")
     public Connect(String host, String db, String username, String password){
         try{
         Class.forName("com.mysql.jdbc.Driver");

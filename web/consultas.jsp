@@ -44,7 +44,7 @@
                         <textarea name="txtAConsulta" rows="4" cols="100" style="width: 1170px;height: 192px;">Aquí va el texto de su consulta</textarea>
                     </form>
                     <%if (request.getParameter("btnConsultar") != null) {
-                        System.out.println("La especie es: "+EspecieController.getEspecie());
+                        System.out.println("Holi consulta");
                     %>
                     
                     <%
